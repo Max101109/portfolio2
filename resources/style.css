@@ -2,11 +2,18 @@
 html {
     background-color: #212121;
     color: #757575;
+    font-size: 16px;
 }
 
 .grid {
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(2, 1fr) 450px repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 480px) {
+    .grid {
+        grid-template: repeat(5, 1fr) / 1fr;
+    }
 }
 
 h1, h2 { 
@@ -20,18 +27,42 @@ h2 {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 480px) {
+    h2 {
+    left: 125px;
+    }
+}
+
 p {
     font-family: "Droid Serif", serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5em;
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+    font-size: .75rem;
+    }
 }
 
 /* Banner img */
 .upnorth {
     grid-area: 1 / 3 / span 1 / span 1;
     position: relative;
-    right: 150px;
+    right: 65px;
     top: 65px;
+}
+
+@media only screen and (max-width: 768px) {
+    .upnorth {
+        right: 95px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .upnorth {
+        right: 0px;
+    }
 }
 
 .upnorth img {
@@ -48,13 +79,32 @@ p {
 }
 
 .intro h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .intro {
+        grid-area: 3 / 1 / span 1 / span 1;
+        bottom: 85%;
+    }
+
+    .intro h1 {
+        position: relative;
+        left: 8%;
+        font-size: 2rem;
+    }
 }
 
 .intro p {
     text-align: center;
     position: relative;
     right: 65px;
+}
+
+@media only screen and (max-width: 480px) {
+    .intro p {
+        right: 10px;
+    }
 }
 
 .connect p {
@@ -77,6 +127,12 @@ p {
 
 }
 
+@media only screen and (max-width: 480px) {
+    .projects {
+        grid-area: 3 / 1 / span 2 / span 1;
+    }
+}
+
 .projects h2 {
     font-size: 28px;
 }
@@ -86,20 +142,49 @@ p {
     left: 55px;
 }
 
+@media only screen and (max-width: 480px) {
+    .projects p {
+        position: relative;
+        left: 28%;
+    }
+}
+
 /* Social */
 .social {
     grid-area: 6 / 3 / span 1 / span 1;
 }
 
-img {
+@media only screen and (max-width: 480px) {
+    .social {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+}
+
+.social img {
     position: relative;
     left: 90px;
     height: 40px;
     width: 40px;
 }
 
+@media only screen and (max-width: 480px) {
+    .social img {
+        position: relative;
+        left: 125px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
 .copyright {
     position: relative;
     top: 145px;
     left: 95px;
+}
+
+@media only screen and (max-width: 480px) {
+    .copyright {
+        left: 130px;
+        font-size: 12px;
+    }
 }
