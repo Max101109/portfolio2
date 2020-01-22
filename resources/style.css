@@ -1,0 +1,87 @@
+/* General */
+html {
+    background-color: #212121;
+    color: #757575;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(2, 1fr) 450px repeat(2, 1fr);
+}
+
+h1, h2 { 
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    position: relative;
+    left: 45px;
+    color: #586E5E;
+}
+
+p {
+    font-family: "Droid Serif", serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/* Banner img */
+.upnorth {
+    grid-area: 1 / 3 / span 1 / span 1;
+    position: relative;
+    right: 65px;
+    top: 65px;
+}
+
+.upnorth img {
+    width: 100%;
+    height: auto;
+} 
+
+/* Intro */
+.intro {
+   grid-area: 3 / 3 / span 1 / span 1;
+   position: relative;
+   bottom: 95px;
+}
+
+.intro h1 {
+    font-size: 36px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* Project Section */
+.projects {
+    grid-area: 5 / 3 / span 3 / span 1;
+}
+
+.projects h2 {
+    font-size: 28px;
+}
+
+/* Social */
+.social {
+    grid-area: 7 / 3 / span 1 / span 1;
+}
+
+img {
+    position: relative;
+    left: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.copyright {
+    position: relative;
+    top: 145px;
+    left: 30px;
+}
