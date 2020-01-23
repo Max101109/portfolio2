@@ -111,6 +111,11 @@ p {
 /* Max-width 480px */
 
 @media only screen and (max-width: 480px) {
+    html {
+        position: relative;
+        left: 20%;
+    }
+
     .intro p {
         font-size: .85rem;
     }
